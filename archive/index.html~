@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title> CarolinaCon </title>
+    <link href="css.css" rel="stylesheet">
+    <script src="js/countdown.js"></script>
+  </head>
+  
+  <body onload="updateCountdown()">
+    <header>
+      <img src="carolinacon.svg" alt="CarolinaCon" id="logo">
+      <p id="countdown"></p>
+    </header>
+    <nav>
+      <a href="index.html"> Main </a>
+      <a href="about.html"> About </a>
+      <a href="location.html"> Location </a>
+      <a href="events.html"> Events </a>
+      <a href="schedule.html"> Schedule </a>
+    </nav>
+
+    <!-- This site works best when viewed with Emacs -->
+    <div id="main">
+      <h2> CarolinaCon 15, April 26th - April 28th, 2019 </h2>
+      <p> Hosted in Charlotte, North Carolina at the Renaissance Charlotte Suites </p>
+    <br>
+    <h2> Call For Papers - 2nd Round Now Open! </h2>
+    <h2> Closes On March 20th </h2>
+      <p> All speakers interested are invited to submit their papers, </p>
+      <p> Proposals should include the following: </p>
+      <ul>
+	<li> Name or Alias </li>
+	<li> Presentation Name </li>
+	<li> Abstract, 1-2 Paragraphs </li>
+	<li> Estimated Time-Length of Presentation </li>
+	<li> Optional: Social Security Number </li>
+	<li> Optional: A Brief Bio </li>
+      </ul>
+      
+      <br>
+      
+      <p> Submit your proposal to <b> carolinacon[at]protonmail[dot]com </b> </p>
+      <p> Please include "CarolinaCon15 - Call For Papers" in the subject line </p>
+      <p> Presenters will receive: </p>
+      <ul>
+	<li> Free CarolinaCon admission for you and one (1) guest </li>
+	<li> one (1) free CarolinaCon-15 T-Shirt </li>
+      </ul>
+   
+    </Div>
+    
+    <footer>
+      <p> (C) 2019 CarolinaCon.org </p>
+    </footer>  
+    <!-- [if IE 6]>
+	 <meta http-equiv="refresh" content="0; url=http://127.0.0.1/" />
+	 <![endif]-->
+  </body>
+</html>

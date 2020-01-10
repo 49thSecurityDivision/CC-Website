@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <title> CarolinaCon </title>
+    <link href="/archive/cc15/css/css.css" rel="stylesheet">
+    <link href="/archive/cc15/css/bootstrap.css" rel="stylesheet">
+    <script src="/archive/cc15/js/countdown.js"></script>
+	<script src="/archive/cc15/js/dropdown.js"></script>
+	<script src="/archive/cc15/js/jquery-1.11.0.min.js"></script>
+  </head>
+
+  <body onload="updateCountdown()">
+    <header>
+      <a href="/index.html"><img src="/archive/cc15/carolinacon.svg" alt="CarolinaCon" id="logo"></a>
+      <p id="countdown"></p>
+    </header>
+    <div>
+      <nav class="navbar">
+        <a href="/archive/cc15/index.html"> Main </a>
+        <a href="/archive/cc15/about.html"> About </a>
+        <a href="/archive/cc15/events.html"> Events </a>
+        <a href="/archive/cc15/schedule.html"> Schedule </a>
+      </nav>
+    </div>
+   
+	<div class="container-fluid container">
+    <div id="main" class="container">
+      <div>
+        <br>
+        <p class="font-italic small"> Click talks for more details </p>
+        <br>
+        <h2> Day 1 </h2>
+		<br>
+        <p> 5:30 pm | Registration Opens </p>
+        <p> 6:30 pm | Opening Remarks</p>
+        <p> 7:00 pm | <a onclick="dropDown('t_1');">Robert Simmons -- Comparing Malicious Files </a></p>
+
+        <p id='t_1' style="display:none;">A critical step one must take during the malware analysis process is to attempt to determine the malware family a sample may belong to. Even if one cannot link a file to a family, one must at least try to find files that are similar and extrapolate information about the sample from comparison with these similar files. This talk reviews a variety of methods for comparing files from simple to complex.</p>
+
+        <p> 8:00 pm | <a onclick="dropDown('t_2');">Jeff Boothby, Chloe Messdagh, and 2 Anonymous hunters -- BountyCraft: The Panel</a></p>
+        <p id='t_2' style="display:none">Every security tester has some sort of methodology and toolset they use. This "secret sauce" is the essence of good security research. BountyCraft the panel is about disclosing those secrets. The panel will talk through the successful tools and techniques used by the panelists, what do they focus on, and why. They will discuss topics such as advents in tooling, approaches to different types of applications, reconnaissance, vulnerability trends in bounty, and more. Viewers will leave this presentation with knowledge of practical recommendations for hacking methodologies, tools, and tips to better hack. 
+  	    The panelists will talk through vulnerabilities commonly seen as edge cases that have been present on heavily tested sites, and what are the upcoming challenges in the space. This talk focuses on the current and future of bounty hunting and web hacks that bug hunters or penetration testers can be knowledgeable of what the various environment trends. We will be going over the changes to the web attack landscape and how web hackers, can better find bugs in the web applications that are currently being developed.</p>
+
+  	    <p> 9:00 pm | <a onclick="dropDown('t_6');"> Elrey -- RedOps: Automating your Red Team </a></p>
+  	    <p id='t_6' style="display:none"> apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y ...here we go again...and failed...alright time to reinstall...hate waiting for two hours for this to complete? This presentation will be showing how to automate your red team infrastructure. We will use packer to automate the installation of a Kali Linux box and then show you how to pull it down with vagrant so you have a completely up to date image with new exploits and completely customized! You can use vagrant to help teach classes you are doing, instead of handing students a thumbdrive with an ova that should always work, but might or might not. I will stand up a whole command and control infrastructure with a simple command to show you how you can easily replicate environments while teaching classes. 60 min talk (append this part to the end of the 30 minute talk):
+  	    Why not just automate your home lab while you are at it, or how about your c2 infrastructure? With terraform we will go in depth about how to automate this process without having to learn each vps provider's api.</p>
+
+        <p> 10:00 pm  | <a onclick="dropDown('t_11');"> Maverick -- Much Ado About Credential Stuffing </a></p>
+        <p id='t_11' style="display:none">My talk focuses on the art of credential stuffing, which uses usernames and credentials from previous breaches (think LinkedIn, etc.) to gain access to important systems. I will briefly cover the history of credential stuffing and how it has impacted the world of cybersecurity, from the "bad guy" point of view. I will then shift focus to practical uses of credential stuffing. The practical uses will come from real-world pentests I have performed and will demo a tool I built with Bash to gather these credentials. One example from a real-world pentest includes the use of credential stuffing to gain access to an external Lotus Notes server, which provided hundreds of usernames and passwords via a known Lotus exploit. From there, the found credentials created a massive username list, which allowed for password spraying and eventually gaining full network access into domain admin. The talk will end with discussions on how to mitigate these sorts of attacks from a blue team point of view. Overall, I hope to gain interest from both red and blue sides and provide them will useful attack and defense information.</p>
+  	    <br>
+
+        <h2> Day 2 </h2>
+		<br>
+  	    <p> 10:00 am | <a onclick="dropDown('t_5');"> Chloe Messdaghi -- How to fix the Diversity Gap in Cybersecurity</a> </p>
+  	    <p id='t_5' style="display:none"> Women make up just 11 percent and minorities are slightly less than 12 percent of the cybersecurity workforce. Coming from a nonprofit background, which is an industry with a high diversity, to one where it is so unbalanced. It’s disheartening and disappointing. I’ve connected with persons who are underrepresented in the field, and many after spending years in cybersecurity are leaving the field. From their shared experiences as well as my own, it is clear that the cybersecurity space needs to get real about the lack of diversity in the space, and the necessity to make changes as we approach the estimated shortage of 1.5 million cybersecurity professionals in 2019. In this talk, we will discuss our brains and how we label and prejudge, hear experiences of underrepresented people in the space, what can be done to fill the gap, and how to increase and retain the number of qualified candidates in cybersecurity.</p>
+
+  	    <p> 11:00 am | <a onclick="dropDown('t_15');">Joe McCray -- Exploit Development for Mere Mortals</a></p>
+  	    <p id='t_15' style="display:none">This presentation will cover the exploit development for InfoSec professionals with little to no programming experience. Learn how hackers really develop exploits from someone that won’t put you to sleep.</p>
+        
+        <p> 12:00 pm ** Lunch Break - Meals not Provided **  </p>
+  	    <p> 1:00 pm  | <a onclick="dropDown('t_7');"> Scott Rodgers and Cory Hefner -- Phish Finder: Can Machine Learning Identify a Phishing Attack? </a> </p>
+  	    <p id='t_7' style="display:none">Phishing emails are one of the largest issues Cybersecurity professionals face today. An errant user clicking a malicious link can be all that is required for attacker to gain a foothold inside a corporate network. As such, many Cybersecurity departments will review reported emails from employees to help them determine if they are legitimate or not. While a great service, this can be extremely time consuming when employees submit large numbers of emails. To help minimize the load on our Detection team, our team has developed a machine learning email classification tool. Currently, our classifier extracts over 400 features from each individual email to allow it to identify emails that may require follow up from an analyst. Equally as important, this tool will identify emails that do not need analyst intervention and can be dispositioned accordingly. In this presentation we will also discuss our future plans to expand the classification tool to identify each of the 10 different Phishing email classifications (Phishing, Malicious, Spam, etc.) our Detection team uses.</p>
+
+  	    <p> 2:00 pm  | <a onclick="dropDown('t_8');"> James Morris -- Breaking into Banks like a Boss </a></p>
+  	    <p id='t_8' style="display:none">Is your money safe? Are the movies real? Can you dodge lasers, sneak through vents, and dress in disguise to steal millions of dollars? Yes. Yes, you can. Let me show you how I broke into banks with billions of dollars on the line through social engineering and bypassing physical security.</p>
+
+  	    <p>3:00 pm  | <a onclick="dropDown('t_9');"> Stuart McMurray -- In and Out the DNS Tunnel </a></p>
+  	    <p id='t_9' style="display:none">DNS is one of the three protocols which will get C2 out of nearly any network, and for some (e.g. "airgapped") networks, often the only way out. Unlike HTTP and HTTPS, defensive tooling around DNS is usually nowhere near as robust, leaving a really nice avenue for the sort of folks who want to sneak comms out of a network. This talk will demystify DNS tunneling.  We'll start with a brief overview of the relevant parts of DNS and why they're great for C2, then dive right into how to abuse simple queries and responses to sneak comms into and out of a network all the way from simple exfil to full bidirectional stream communications.  We'll finish up with a few easy wins for Blue teams who are looking to catch DNS tunneling in action.</p>
+
+  	    <p> 4:00 pm  | <a onclick="dropDown('t_10');">Lawrence Teo -- Writing Exploit-Resistant Code with OpenBSD </a> </p>
+  	    <p id='t_10' style="display:none">OpenBSD is renowned for its security innovations and code quality. With its emphasis on code correctness, exploit mitigation techniques, and a rigorous development process, OpenBSD provides a rich platform and environment for developers to create robust software. This talk explores various OpenBSD programs, exploit mitigation techniques, tools, and development practices to show how you can use them to write code that is safe, robust, and resistant to exploits — even if your code is meant for platforms other than OpenBSD.</p>
+
+  	    <p> 5:00 pm  ** Dinner Break - Meals not provided ** </p>
+        <p> 7:00 pm | <a onclick="dropDown('t_4');">Tom Holt -- How Underground Vendors Advertise Product in Cybercrime as Service Markets</a></p>
+        <p id='t_4' style="display:none">We hear a lot about underground cybercrime as service markets from security vendors and in the news, but its not often that you see people explain the strategies that vendors use to draw in customers or the extent to which they differentiate themselves from potential competitors. This talk will provide an overview of the ways that vendors for illicit goods, ranging from PII to hacking tools, sell their wares, including the language and imagery used in advertisements using a sample of active shops and forums operating on the Open and Dark Web. We will also examine the process of purchasing and the ways vendors entice customers through the use of free replacements, customer service lines, and escrow services. Attendees will leave this presentation with a better understanding of the ways that cybercriminals utilize social cues and traditional marketing strategies to pull in customers over time.</p>
+
+        <p> 8:00 pm  ** Hacker Trivia ** </p>
+  	    <br>
+
+        <h2> Day 3 </h2>
+		<br> 
+  	    <p> 10:00 am | <a onclick="dropDown('t_12');">MyProjectExpert -- Getting started with Powershell and One Tool to Hack them All </a></p>
+  	    <p id='t_12' style="display:none">Using PowerShell is about building tools to automated tasks. This session is a beginner’s guide to getting started with PowerShell. The session covers why PowerShell is such a powerful tool, a quick history and learning the basics on how to get started with PowerShell. Several demos provide you with some insights into the kind of things you can do with PowerShell.</p>
+
+		<p> 11:00 am | <a onclick="dropDown('t_3');">Sm0key -- Detection and Exploitation of Amplification Attacks in the Wild</a></p>
+  	    <p id='t_3' style="display:none">Over the next forty-five minutes we will discuss three examples of amplification attacks, how to identify them, and how to leverage them to induce failures in systems. At a base level an amplification circuit takes some signal as an input and has as an output another signal of greater magnitude than the input. Our first case study will cover over driving tube power amps, and introduce the idea of signal amplification and how it can be used beyond its intended purpose. Our second case study will review DNS amplification attacks, and walk through from discovery to exploitation. Our final case study will cover a traditional three tier web application, and how to use amplification attacks to induce DOS states at various layers.</p>
+
+        <p> 12:00 pm ** Lunch Break - Meals not Provided **</p>
+		  
+		<p> 1:00 pm | <a onclick="dropDown('t_13');">Brandon Martin -- Was I supposed to mix the security in before baking? </a></p>
+  	    <p id='t_13' style="display:none">Security practitioners advocate ideals through clichés and analogies to help others understand complex problems. One prominent analogy espouses baking security into a solution instead of bolting security on at the end. This seems like an obvious analogy – a baker certainly can’t add flour to a cake after it’s in the oven. In business reality, time-to-market beats security every day of the week. How can an architect bake security into solutions when the extra time could result in a failed venture? This talk explores the realities of blending security into the design and implementation of solutions with a goal of realizing better is not the enemy of perfect. Some implementations bolt on security beautifully; other design patterns prove impossible to correct. Look forward to a meme-filled tour of architectures, design patterns, and lessons learned that will help security practitioners and business people identify if they’re cooking soup or baking cakes (…if that sounds like a mixed metaphor, don’t be late for supper).</p>
+		  
+  	    <p class='talk'> 2:00 pm  | <a onclick="dropDown('t_14');"> _hyp3ri0n -- WhoBuntu: Privacy in a Feature-Rich Environment </a></p>
+  	    <p id='t_14' style="display:none">WhoBuntu is a new distro I've created to allow for all the benefits of Whonix and all the benefits of Ubuntu combined. For those not familiar with Whonix, its a setup for transparent Tor proxying recommended by Tor for maximum privacy. WhoBuntu takes this model and applies it to Ubuntu - allowing a feature rich Linux distribution where *all traffic* is anonymized through Tor, no exceptions possible. It also comes bundled with several crypto wallets, full disk encryption, and much much more. Come check out the internals of WhoBuntu, the challenges making it, and the continued challenges of fixing bugs and adding features. We'll also discuss the dual-VM isolated network model that WhoBuntu uses for anonymity and maybe even some light discussion on the balance between aiding privacy and potentially enabling criminals. For any privacy nuts out there, you'll love this presentation. Oh and you can also shout at me, call bullshit, or ask questions during the presentation, I love audience interaction.</p>
+
+  	    <p> 3:00 pm  | <a onclick="dropDown('t_15');"> Mike and Michelle Hodges -- Build it, Buy it, or Both? Taking an Engineered-Focused Approach to Security Tooling </a></p>
+  	    <p id='t_15' style="display:none">The technology market is growing faster than the security tooling market that supports it. This puts security teams in difficult situations where the the available tooling may only provide a partial solution to a critical problem teams are facing. This led our security and privacy team to adopt an engineering-focused approach to our tooling needs and ask ourselves: buy it, build it, or both?</p>
+        <p> 4:00 pm  ** Announcement of Contest Winners and Closing Remarks **</p>
+        <br>
+      </div>
+    </div>   
+  </div>
+
+
+  <!-- [if IE 6]>
+       <meta http-equiv="refresh" content="0; url=http://127.0.0.1/" />
+  <![endif]-->
+  
+  
+</body>
+</html>
