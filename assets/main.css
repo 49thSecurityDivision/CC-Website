@@ -1,0 +1,70 @@
+@font-face {
+    font-family: TopazPlus;
+    src: url(/assets/TopazPlus_a500_v1.0.ttf);
+  }
+
+* {
+    font-family: TopazPlus, monospace !important;
+}
+body {
+    background-color: #040404;
+    line-height: 1.3;
+}
+main {
+    max-width: 90vw;
+    padding: 2ch;
+    margin: auto;
+}
+.card {
+    background-color: #040404;
+    border-color: #a54477;
+    color: #93d1ce;
+    box-shadow: 5px 5px #ffc7e9;
+}
+header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.logo {
+    max-height: 20rem;
+    max-width: 98%;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #93d1ce;
+}
+a {
+    color: #ff3c3c;
+    text-decoration: none;
+    outline: 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h5 {
+    color: #fee214;
+}
+
+hr {
+    border: 0;
+    border-top: dashed #fa0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.checker {
+    background-image: linear-gradient(45deg, #ca0c0c 25%, transparent 25%), 
+    linear-gradient(-45deg, #ca0c0c 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #ca0c0c 75%), 
+    linear-gradient(-45deg, transparent 75%, #ca0c0c 75%);
+    background-size: 6em 6em;
+    background-position: -1em -1em, -1em 2em, 2em -4em, -4em -1em;
+}
+
+.title {
+    display:inline-block;
+    border: solid #eee;
+}
