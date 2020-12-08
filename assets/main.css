@@ -1,6 +1,6 @@
 @font-face {
     font-family: TopazPlus;
-    src: url(/assets/TopazPlus_a500_v1.0.ttf);
+    src: url(TopazPlus_a500_v1.0.ttf);
   }
 
 * {
@@ -17,9 +17,8 @@ main {
 }
 .card {
     background-color: #040404;
-    border-color: #a54477;
+    border-color: #fcf497;
     color: #93d1ce;
-    box-shadow: 5px 5px #ffc7e9;
 }
 header {
     margin-bottom: 1.5rem;
@@ -37,7 +36,7 @@ footer {
     color: #93d1ce;
 }
 a {
-    color: #ff3c3c;
+    color: #cd7ba6;
     text-decoration: none;
     outline: 0;
 }
