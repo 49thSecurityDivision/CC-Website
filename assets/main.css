@@ -45,12 +45,12 @@ a:hover {
 }
 
 h5 {
-    color: #fee214;
+    color: #fcf497;
 }
 
 hr {
     border: 0;
-    border-top: dashed #fa0;
+    border-top: dashed #fcf497;
     margin-top: 2em;
     margin-bottom: 2em;
 }
