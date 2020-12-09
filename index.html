@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="./assets/lit.css">
   <link rel="stylesheet" href="./assets/util.css">
   <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cfp.carolinacon.org/cc-online/schedule/widget/v1.css">
+  <script type="text/javascript" src="https://cfp.carolinacon.org/cc-online/schedule/widget/v1.LOCALE.js" async></script>
 </head>
 
 <body class="c">
@@ -25,7 +27,17 @@
             <h4>CarolinaCon Online will be open from 10/20/21 - 10/25/21</h4>
             <p>Check back later to see what's cooking!</p>
             <h3>Call for papers is now open!</h3>
-            <p>If you would like to speak at the 2021 con, <a href="https://random.wesring.com">Submit your talk here</a>.</p>
+            /* p>If you would like to speak at the 2021 con, <a href="https://random.wesring.com">Submit your talk here</a>.</p> 
+            /* Embedded CFP form */
+            <pretalx-schedule-widget event="https://cfp.carolinacon.org/cc-online/" height="HEIGHT"></pretalx-schedule-widget>
+            <noscript>
+               <div class="pretalx-widget">
+                    <div class="pretalx-widget-info-message">
+                        JavaScript is disabled in your browser. To access our schedule without JavaScript,
+                        please <a target="_blank" href="https://cfp.carolinacon.org/cc-online/schedule/">click here</a>.
+                    </div>
+                </div>
+            </noscript>
         </div>
     </main>
 
