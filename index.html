@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
-  <title>CarolinaCon Online</title>
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="./assets/lit.css">
-  <link rel="stylesheet" href="./assets/util.css">
-  <link rel="stylesheet" href="./assets/main.css">
+    <title>CarolinaCon Online</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./assets/lit.css">
+    <link rel="stylesheet" href="./assets/util.css">
+    <link rel="stylesheet" href="./assets/main.css">
 </head>
 
 <body class="c">
     <main>
         <header>
             <a href="/"><img class="logo" src="/assets/cc.png" alt="Carolina Con hack the pig logo"></a>
-                <div class="row card bg-white">
-                    <div class="2 col"><a href="/schedule.html">Schedule</a></div>
-                    <div class="2 col"><a href="https://twitter.com/CarolinaCon">Twitter</a></div>
-                    <div class="2 col"><a href="/livestream.html">Livestream</a></div>
-                    <div class="2 col"><a href="/discord.html">Discord</a></div>
-                    <div class="2 col"><a href="/about.html">About</a></div>
-                    <div class="2 col"><a href="/faq.html">FAQ</a></div>
-                </div>
+            <div class="row card bg-white">
+                <div class="2 col"><a href="/schedule.html">Schedule</a></div>
+                <div class="2 col"><a href="https://twitter.com/CarolinaCon">Twitter</a></div>
+                <div class="2 col"><a href="/livestream.html">Livestream</a></div>
+                <div class="2 col"><a href="/discord.html">Discord</a></div>
+                <div class="2 col"><a href="/about.html">About</a></div>
+                <div class="2 col"><a href="/faq.html">FAQ</a></div>
+            </div>
         </header>
-        
         <div class="card bg-white tc">
+            <div class="p2 tc">
+                <div class="ribbon"><span id="ribbonTimer"></span> DAYS UNTIL OPEN</div>
+            </div>
             <h4>CarolinaCon Online will be live from 8PM EST 4/23/21 to 8PM EST 4/25/21</h4>
-            <p>This year CarolinaCon will be online! That means all our talks will be livestreamed and, for the first time ever, our CTF will be open to all over the internet!</p>
-            <p>To better share our NC pride with a larger audience this year we have chosen to theme the con after traditional NC BBQ! Winners in the CTF will be mailed some of our favorite local NC BBQ sauces!</p>
+            <p>This year CarolinaCon will be online! That means all our talks will be livestreamed and, for the first
+                time ever, our CTF will be open to all over the internet!</p>
+            <p>To better share our NC pride with a larger audience this year we have chosen to theme the con after
+                traditional NC BBQ! Winners in the CTF will be mailed some of our favorite local NC BBQ sauces!</p>
+            <hr>
             <h3>Call for papers is now open!</h3>
-            <a href="https://cfp.carolinacon.org/cc-online/cfp"><h4>Submit talks here!</h4></a>
+            <a href="https://cfp.carolinacon.org/cc-online/cfp">
+                <h4>Submit talks here!</h4>
+            </a>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2020 CarolinaCon</p>
-  </footer>
+        <p>&copy; <span id="date"></span> CarolinaCon</p>
+    </footer>
 </body>
+
 </html>
+
+<script>
+    window.onload = function () {
+        document.getElementById("date").innerText = new Date().getFullYear();
+        document.getElementById("ribbonTimer").innerText = Math.ceil((new Date("2021/04/23") - new Date()) / (1000*60*60*24));
+    }
+</script>
+
 <!--Made with love from Wes-->
