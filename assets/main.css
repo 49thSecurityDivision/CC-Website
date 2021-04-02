@@ -123,4 +123,9 @@ hr {
         right: -3.9rem;
         transform: rotate(180deg);
     }
+    td {
+        padding: 0em;/*yeah, I get it, this is a cheap hack*/
+        font-size: smaller;
+    }
 }
+
