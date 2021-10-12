@@ -1,0 +1,131 @@
+@font-face {
+    font-family: TopazPlus;
+    src: url(TopazPlus_a500_v1.0.ttf);
+}
+
+* {
+    font-family: TopazPlus, monospace !important;
+}
+
+body {
+    background-color: #040404;
+    line-height: 1.3;
+}
+
+main {
+    max-width: 90vw;
+    padding: 2ch;
+    margin: auto;
+}
+
+.card {
+    background-color: #040404;
+    border-color: #fcf497;
+    color: #93d1ce;
+}
+
+header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.logo {
+    max-height: 20rem;
+    max-width: 98%;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #93d1ce;
+}
+
+a {
+    color: #cd7ba6;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h5 {
+    color: #fcf497;
+}
+
+hr {
+    border: 0;
+    border-top: dashed #fcf497;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.checker {
+    background-image: linear-gradient(45deg, #ca0c0c 25%, transparent 25%), linear-gradient(-45deg, #ca0c0c 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ca0c0c 75%), linear-gradient(-45deg, transparent 75%, #ca0c0c 75%);
+    background-size: 6em 6em;
+    background-position: -1em -1em, -1em 2em, 2em -4em, -4em -1em;
+}
+
+.title {
+    display: inline-block;
+    border: solid #eee;
+}
+
+.countdown {
+    text-shadow: 0.15rem 0.15rem #cd7ba6;
+}
+
+.ribbon {
+    z-index: 3;
+    background: #fce413;
+    position: relative;
+    color: black;
+    display: inline-block;
+    padding: 0.5em 1rem;
+    margin: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.ribbon:before, .ribbon:after {
+    z-index: 1;
+    background: #e9d312;
+    position: absolute;
+    top: 0.5rem;
+    content: ' ';
+    border: 1.05em solid rgba(0, 0, 0, 0);
+    border-left: 0.9em solid #040404;
+}
+
+.ribbon:before {
+    left: -2.85rem;
+}
+
+.ribbon:after {
+    right: -2.85rem;
+    transform: rotate(180deg);
+}
+
+@media only screen and (width: 980px), (hover: none) {
+    .ribbon:before, .ribbon:after {
+        top: 0.5rem;
+        border: 1.75em solid rgba(0, 0, 0, 0);
+        border-left: 0.9em solid #040404;
+    }
+
+    .ribbon:before {
+        left: -3.9rem;
+    }
+
+    .ribbon:after {
+        right: -3.9rem;
+        transform: rotate(180deg);
+    }
+    td {
+        padding: 0em;/*yeah, I get it, this is a cheap hack*/
+        font-size: smaller;
+    }
+}
+
