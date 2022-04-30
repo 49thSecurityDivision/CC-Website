@@ -31,6 +31,10 @@ h5 {
 	color:  #fcf497;
 }
 
+.big-text {
+	font-size: 1.875em;
+}
+
 .stardiv {
 	min-height: 100%;
 	min-width: 100%;
