@@ -13,8 +13,7 @@ html,body {
 }
 
 html {
-	background: rgb(12,14,20);
-	background: linear-gradient(180deg, rgba(12,14,20,1) 0%, rgba(15,39,62,1) 63%, rgba(65,93,117,1) 100%);
+	background: rgb(0, 40, 59);
 	margin: 0;
 }
 
@@ -24,7 +23,7 @@ body {
 }
 
 hr {
-	border-color: #0d131d;
+	border-color: #ddb78c;
 }
 
 h5 {
@@ -35,25 +34,15 @@ h5 {
 	font-size: 1.875em;
 }
 
-.stardiv {
-	min-height: 100%;
-	min-width: 100%;
-	z-index: -100;
-}
 
 a  {
-/*color: #e2361d;*/
+	color: #f4e2cb;
 	font-size: 1.2rem;
 }
 
 .main {
-	padding-top: 8em;
+	/*padding-top: 8em;*/
 	min-height: 100vh;
-}
-
-.bg-black-trans {
-	background: rgba(0, 0, 0, 0.5);
-	border: hidden;
 }
 
 .blink {
@@ -66,82 +55,15 @@ a  {
 	}
 }
 
-.float-container {
-	padding-left: 2rem;
-	position: absolute;
+.panda-logo {
+	/*display: block;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	max-width:200px;
 }
 
-.float-around {
-	position: relative;
-	animation-name: float-around;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-
-	width: 20rem;
+.card {
+	background: #014353;
+	border-color: #345e6c;
 }
-
-@media only screen and (max-device-width: 1366px) {
-	.float-around {
-		width: 10rem;
-	}
-}
-
-@keyframes float-around {
-	0%   {left:0rem; top:0rem;}
-	25%  {left:0.3rem; top:-0.5rem;}
-	50%  {left:0rem; top:-0.2rem;}
-	75%  {left:0.3rem; top:0.1rem;}
-	100% {left:0rem; top:0rem;}
-}
-
-.star-0 {
-	width:5px;
-	height:5px;
-	border-radius:3px;
-	background:white;
-	box-shadow:0 0 6px white, 0 0 6px white, 0 0 4px white;
-}
-.star-1 {
-	width:4px;
-	height:4px;
-	border-radius:2px;
-	background:white;
-	box-shadow:0 0 5px white, 0 0 5px white, 0 0 5px white;
-}
-.star-2 {
-	width:3px;
-	height:3px;
-	border-radius:1px;
-	background:white;
-	box-shadow:0 0 3px white, 0 0 3px white, 0 0 3px white;
-}
-.star-3 {
-	width:3px;
-	height:3px;
-	border-radius:2px;
-	background:white;
-	box-shadow:0 0 2px white, 0 0 1px white;
-}
-.star-4 {
-	width:2px;
-	height:2px;
-	border-radius:2px;
-	background:#BBB;
-	box-shadow:0 0 2px #BBB,0 0 2px #BBB;
-}
-.star-5 {
-	width:2px;
-	height:2px;
-	border-radius:2px;
-	background:#999;
-	box-shadow:0 0 2px #999 ,0 0 2px #999;
-}
-.star-6 {
-	width:1px;
-	height:1px;
-	border-radius:2px;
-	background:#999;
-	box-shadow:0 0 2px #999 ,0 0 2px #999;
-}
-<!-- thanks for the stars https://css.michaelschrauzer.com/demos/css-night-sky.html-->
