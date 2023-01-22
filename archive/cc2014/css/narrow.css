@@ -1,0 +1,38 @@
+.main-body {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.header-thumb {
+  width: 100%;
+}
+
+.header-content {
+  width: 100%;
+  float: right;
+}
+
+.body-container {
+  background-color: #123456;
+}
+
+.dl {
+  padding: 8px 15px;
+  text-align: right;
+}
+
+/* CUSTOMIZE THE CAROUSEL */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  padding-bottom: 70px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  padding-top: 10px;
+}
+
+.twitter-link {
+  padding: 10px 0px 10px;
+}
