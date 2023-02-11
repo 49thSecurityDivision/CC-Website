@@ -3,13 +3,18 @@
     src: url(SourceCodePro-Regular.ttf.woff2);
 }
 
+@font-face {
+	font-family: ZenKakuGothicAntique;
+    src: url(ZenKakuGothicAntique-Regular.woff2);
+}
+
 * {
-	font-family: SourceCodePro, monospace !important;
+	font-family: ZenKakuGothicAntique, ShinGo, SourceCodePro, monospace !important;
 	line-height: 1.3;
 }
 
 p {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
 html,body {
