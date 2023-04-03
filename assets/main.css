@@ -35,6 +35,10 @@ hr {
 	border-color: #345e6c;
 }
 
+h2, h3 {
+	margin: 0.5em;
+}
+
 h5 {
 	color:  #fcf497;
 }
@@ -147,4 +151,29 @@ dd {
 	.earthday {
 		font-size: 1rem;
 	}
+}
+
+
+.b-boarder {
+	border: none;
+  	border-bottom: solid;
+  	border-color: #345e6c;
+}
+
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-bottom: solid;
+  outline: none;
+  border-color: #345e6c;
+}
+
+.content {
+	display: none;
+	overflow: hidden;
+	border: none;
+  	border-bottom: solid;
+  	border-color: #345e6c;
 }

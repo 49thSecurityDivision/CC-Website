@@ -4,236 +4,195 @@
     <title>CarolinaCon Online 2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The CarolinaCon Online 2 schedule. Join us for this years conference!">
+    <meta name="description" content="The CarolinaCon Online 3 schedule. Join us for this years conference!">
     <link rel="stylesheet" href="./assets/lit.css">
     <link rel="stylesheet" href="./assets/util.css">
     <link rel="stylesheet" href="./assets/main.css"/>
     <script src="./assets/main.js"></script>
+    <script src="./assets/schedule.js"></script>
 </head>
 
 
 <body>
-    <div id="stardiv" class="stardiv"></div>
-    <div class="float-container">
-        <a href="./coms.html"><img class="float-around" src="./assets/logo.png" alt="CarolinaCon Hacksat" title="Homepage"></a>
-    </div>
+    <div class="row tc mt1"><a href="./"><img class="panda-logo" src="./assets/panda_logo2_small.png" alt="CarolinaCon hacker panda"/></a></div>
     <main class="c main">
-        <div class="card bg-black-trans tc">
-            <h2>CarolinaCon Online 2 (2022)</h2>
-        </div>
         <header>
-            <div class="row card bg-black-trans tc">
-                <div class="row ">
-                    <div class="1 col"><a href="./">Home</a></div>
+            <div class="row card tc">
+                <div class="row">
                     <div class="1 col"><a href="./about.html">About</a></div>
-                    <div class="1 col"><a href="https://shop.carolinacon.org/products/carolinacon-swag-bag">Store</a></div>
-                    <div class="1 col"><a href="https://ctf.carolinacon.org/">CTF</a></div>
-                </div>
-                <div class="row ">
                     <div class="1 col"><a href="./schedule.html">Schedule</a></div>
                     <div class="1 col"><a href="https://twitter.com/CarolinaCon">Twitter</a></div>
+                    <div class="1 col"><a href="https://infosec.exchange/@carolinacon">Mastodon</a></div>
                     <div class="1 col"><a href="./coms.html">Discord/Matrix</a></div>
                     <div class="1 col"><a href="https://bank.hackclub.com/donations/start/carolinacon">Donate</a></div>
                 </div>
-                <div class="row ">
-                    <div class="1 col"><a href="https://radio.carolinacon.org/">Underground Radio</a></div>
-                </div>
             </div>
         </header>
-        <div class="card bg-black-trans tc">
-            <p>Welcome to the CarolinaCon schedule page. The top half of the page has the events. Click the talk title to jump down to the talk abstract. All times are EST. The CTF will run from 7:30 Friday, to noon Sunday.</p>
+        <div class="card tc">
+            <p>This year we stacked talks a bit closer together to help with flow. Please tune in on the <a href="https://www.youtube.com/user/CarolinaConVideos">youtube</a> channel and on Discord! All times are EST. The CTF will run from 7:30 Friday, to noon Sunday.</p>
         </div>
-        <div class="card bg-black-trans">
-            <p class="tc"><a href="https://twitter.com/7asecurity">@7aSecurity</a>'s star-bound workshops "Hacking JavaScript Desktop apps with XSS and RCE" and "Practical Mobile App Attacks By Example" are Friday morning, make sure to <a target="_blank" href="https://pzov9a7gkqh.typeform.com/to/sECcub8H">signup here.</a></p>
-            <hr>
-            <h3>Friday (April 29th)</h3>
-            <table class="w-100">
-                <tr>
-                    <th>Time</th>
-                    <th>Talk</th>
-                    <th>Speaker</th>
-                </tr>
-                <tr>
-                    <td>9:00am - 11:00</td>
-                    <td>Workshop: <a href="#js-apps">Hacking JavaScript Desktop apps with XSS and RCE</a></td>
-                    <td>7aSecurity</td>
-                </tr>
-                <tr>
-                    <td>11:30am - 12:30</td>
-                    <td>Workshop: <a href="#app-attack">Practical Mobile App Attacks By Example</a></td>
-                    <td>7aSecurity</td>
-                </tr>
-                <tr>
-                    <td>7pm</td>
-                    <td>CCOnline 2 kick-off</td>
-                    <td>CC Crew</td>
-                </tr>
-                <tr>
-                    <td>7:05pm</td>
-                    <td>Hacker Trivia!</td>
-                    <td>CC Crew</td>
-                </tr>
-            </table>
-            <hr>
-            <h3>Saturday April 30th</h3>
-            <table class="w-100">
-                <tr>
-                    <th>Time</th>
-                    <th>Talk</th>
-                    <th>Speaker</th>
-                </tr>
-                <tr>
-                    <td>10:00am</td>
-                    <td><a href="#moonwalking">Moonwalking Through the Cloud - Continuous Integration / Continuous Disaster</a></td>
-                    <td>0x57696c6c</td>
-                </tr>
-                <tr>
-                    <td>11:00am</td>
-                    <td><a href="#vuln-containers">Vulnerability Management for Containers</a></td>
-                    <td>Scott Wilson</td>
-                </tr>
-                <tr>
-                    <td>12:00pm</td>
-                    <td class="tc"> - <a href="https://www.youtube.com/watch?v=f9X1C7pTu-M">Space Walk</a> - </td>
-                    <td class="tc"> - </td>
-                </tr>
-                <tr>
-                    <td>1:00pm</td>
-                    <td><a href="#usenet">Tales from the Usenet</a></td>
-                    <td>Jason Evans</td>
-                </tr>
-                <tr>
-                    <td>2:00pm</td>
-                    <td><a href="#cameras">Cameras, CACs & Clocks: Enterprise IoT Security Sucks - A Story of Two Million Interrogated Devices</a></td>
-                    <td>Brian Contos</td>
-                </tr>
-                <tr>
-                    <td>3:00pm</td>
-                    <td><a href="#security-features">Security is an Awesome Product Feature</a></td>
-                    <td>Mark Hahn</td>
-                </tr>
-                <tr>
-                    <td>4:00pm</td>
-                    <td><a href="#stryng-theory">Stryng Theory: Disregard Becomes a Dumpster Fire</a></td>
-                    <td>Stryngs</td>
-                </tr>
-                
-            </table>
-            <hr>
-            <h3>Sunday (May 1st)</h3>
-            <table class="w-100">
-                <tr>
-                    <th>Time</th>
-                    <th>Talk</th>
-                    <th>Speaker</th>
-                </tr>
-                <tr>
-                    <td>10:00am</td>
-                    <td><a href="#trifecta">Trifecta of Email Authentication</a></td>
-                    <td>Denice</td>
-                </tr>
-                <tr>
-                    <td>11:00am</td>
-                    <td><a href="#purple">Beyond Purple - Fostering Cross-Team Collaboration</a></td>
-                    <td>Andrew Clinton</td>
-                </tr>
-                <tr>
-                    <td>12:00pm</td>
-                    <td><a href="#callin">Q&A Radio, End of CTF</a></td>
-                    <td>CC Crew and Friends</td>
-                </tr>
-            </table>
-        </div>
+        <div class="card">
+            <h3>Friday (April 21st)</h3>
+                <div id="list-group w-100">
+                    <div class="p0 rounded">
+                        <div class="card m0 p0 collapsible">
+                             <div class="row">
+                                <div class="2 col"><p>7:30 PM</p></div>
+                                <div class="7 col"><a>CarolinaCon 2023 Kickoff</a></div>
+                                <div class="3 col"><p>CC Crew</p></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                          <p>Grab a drink of choice and strap in. The CarolinaCon crew will be kicking off the third Online CarolinaCon with a toast and the start of the CTF!</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="card bg-black-trans">
-            <a name="js-apps"></a>
-            <h3>Workshop info</h3>
-            <p>Abraham Aranguren of <a href="https://7asecurity.com">7asecurity</a> has been kind enough to host two workshops this year. Make sure you signup via this typeform if you would like to attend either of their talks. An email is required for workshop materials. <a target="_blank" href="https://pzov9a7gkqh.typeform.com/to/sECcub8H">signup here.</a></p>
-            <div>
-                <h4>Zero-day .NET and Nvidia GFE Vulnerabilities Explained</h4>
-                <p>
-                    Long are the days since web servers were run by perl scripts and desktop apps written in Delphi. What is common between Microsoft Teams, Skype, Bitwarden, Slack and Discord? All of them are written in Electron: JavaScript on the client.
-                    <br>
-                    This workshop covers the following topics:
-                    <ul>
-                        <li>Essential techniques to audit Electron applications</li>
-                        <li>What XSS means in a desktop application</li>
-                        <li>How to turn XSS into RCE in JavaScript apps</li>
-                        <li>Attacking preload scripts</li>
-                        <li>RCE via IPC</li>
-                    </ul>
-                    All action, no fluff
-                    JavaScript Desktop apps share traditional attack vectors and also introduce new opportunities to threat actors. This workshop will teach you how to review JavaScript desktop apps, showcasing Node.js and Electron but using techniques that will also work against any other desktop app platform. Ideal for Penetration Testers, Desktop app Developers as well as everybody interested in JavaScript/Node.js/Electron app security.
+            <h3>Saturday April 22nd</h3>
 
-                    Attendants will be provided with lifetime access to practice.
-                </p>
-                <a name="app-attack"></a>
-                <h4>Practical Mobile App Attacks By Example</h4>
-                <p>
-                If you are the kind of person who enjoys workshops with practical information that you can immediately apply when you go back to work, this workshop is for you, all action, no fluff :) <br><br>
-
-                Get lifetime access to practice some attack vectors, including multiple mobile app attack attacks, deeplinks, mobile app data exfiltration with XSS. Vulnerable apps to practice, guided exercise PDFs and video recording included:
-                <a href="https://7asecurity.com/free-workshop-mobile-practical">https://7asecurity.com/free-workshop-mobile-practical</a>
-                A significant amount of confusion exists about what kind of damage is possible when vulnerabilities are found in mobile apps. This workshop aims to solve this problem by providing a broad coverage of Android and iOS app vulnerabilities identified over multiple years of penetration testing. The purpose is to provide a comprehensive repertoire of security anti-patterns that penetration testers can look for and mobile app developers can watch out for to avoid.
-                </p>
+            <div id="list-group w-100">
+                <div class="p0 rounded">
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>10:00 AM</p></div>
+                            <div class="7 col"><a>How to Rob a Bank Over the Phone</a></div>
+                            <div class="3 col"><p>Joshua Crumbaugh</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>In this intense keynote, Joshua brings the audience along for the ride on one of the most advanced social engineering attacks he's ever executed - robbing a bank over the phone. Audiences will be on the edge of their seats as they listen to real audio of Joshua convincing the Vice President of a bank to give up full access to his computer and eventually the entire facility. 
+                        <br>Joshua will discuss why punitive approaches to cyber security awareness are counter-productive, how organizations can leverage AI tools to emphasize positive reinforcement techniques, and how data analysis and behavior analytics can be used to detect anomalies and create an engaging environment.</p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>10:55 AM</p></div>
+                            <div class="7 col pv1"><a>Kali Ma: Pen-Testing the Connection Between IMDs and HMDs</a></div>
+                            <div class="3 col"><p>Dylan Schopmann</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>In this talk, Dylan will evaluate the security of communication between Implanted Medical Devices (IMDs) and Home Monitoring Devices (HMDs), identifying potential vulnerabilities and proposing solutions to ensure patient safety and privacy.We discuss the security vulnerabilities of wireless-enabled pacemakers, proposes solutions to mitigate these risks, and emphasizes the importance of enhancing the security of these devices for patient safety and privacy.
+                      </p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>11:30 AM</p></div>
+                            <div class="7 col"><a>Deconstructing Firewalls</a></div>
+                            <div class="3 col"><p>Trevon</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p> This talk is about my research related to software defined networking and dynamic network management. This talk will cover an overview of this research field and the current project I am working that allows for dynamically packet filtering on network switches. This solution provides a low cost distributed firewall solution that is able to scale with growing network demands.
+                        <br>Our research focuses on automating local and global rules in a distributed firewall network while leveraging the benefits of Software Defined Networking (SDN) and SMT solvers. This allows use to integrate our system into IDS systems like snort and filter alerts without degrading the network state and introducing network loops. The end results of this research will be an open source way to develop and deploy the next generation of security appliances.
+                      </p>
+                    </div>
+                    <div class="card m0 p0 b-boarder">
+                         <div class="row">
+                            <div class="2 col"></div>
+                            <div class="7 col tc"><p>Lunch</p></div>
+                            <div class="3 col"></div>
+                        </div>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>1:00 PM</p></div>
+                            <div class="7 col"><a>Icy bridge project needs your help!</a></div>
+                            <div class="3 col"><p>John F. Davis (Math400)</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>I will be speaking on a project to detect icy bridges and hope to recruit volunteers to assist in building a open source software using NCDOT cameras. The project uses two different cloud providers GCP and AWS. Each flavor runs web apps using micro services - ie not vm's. Each project uses a different ML framework for the respective platforms
+                      </p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>1:55 PM</p></div>
+                            <div class="7 col"><a>Protecting Yourself From People Like Me</a></div>
+                            <div class="3 col"><p>Chris Horner</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>This talk is about OSINT and protecting personal privacy. As a pentester, a component of my job is social engineering and I show how I locate and piece together publicly available information on work engagements to carry out successful campaigns. Then I also talk about how people and companies can take back control of this information and protect themselves by being more selective about what information is shared or available online.
+                      </p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>2:50 PM</p></div>
+                            <div class="7 col"><a>Fuzzing: Finding Your Own Bugs and 0days!</a></div>
+                            <div class="3 col"><p>Rodolpho Concurde (ROd0X)</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>In this talk, I will explain how 0days' are found through different Fuzzing techniques. I'll walk you through how you create a fuzzer, types of fuzzers, and types of targets. We will look into how you can find a Buffer Overflow, and how to leverage that to write your own exploit. 2 PoC demos included, of course!
+                      </p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>3:40 PM</p></div>
+                            <div class="7 col"><a>Shining a light into the security blackhole of IoT and OT</a></div>
+                            <div class="3 col"><p>Huxley Barbee <br>(void *)</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>The Internet of Things (IoT) and the rise of Operational Technology (OT) networks have brought about a significant increase in the number of connected devices in modern networks, creating new challenges for blue teams in terms of inventorying assets, identifying and mitigating vulnerabilities, and verifying security controls coverage. This presentation will explore the unique challenges that IoT and OT pose for network scanning and provide solutions for effectively addressing these challenges.
+                      </p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>4:30 PM</p></div>
+                            <div class="7 col"><a>The (hash)Cat Factory</a></div>
+                            <div class="3 col"><p>elrey741 (Alex R.)</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>"Can you turn the cracking server off & on again..." Something I'd often request a co-worker to do in the office & talking with @netmux happens quite often w/password cracking rigs. Whether it’s an Nvidia driver update or the changes you did to optimize the OS for password cracking, it can turn your server into a fragile machine. We’ll show how you can automate the setup of a password cracking rigs & build resilience into that process (automating snapshots & rollbacks w/ansible + libvirt/QEMU).
+                      </p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>5:15 PM</p></div>
+                            <div class="7 col pv1"><a>Dynamic Database Credentials: A Secure and Efficient Approach</a></div>
+                            <div class="3 col"><p>Harvey Cary</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>In today's fast-paced business environment, organizations need to be able to access and manage their data quickly and easily. However, traditional methods of storing and managing database credentials can be time-consuming and insecure. To safeguard our data and our reputation we must shift our thinking from static long-lived accounts to this new methodology of minimizing the number of accounts in our databases and short-lived dynamic accounts.
+                      </p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="card bg-black-trans">
-            <h3>Talk info</h3>
-            <div>
-                <a name="moonwalking"></a>
-                <h4>Moonwalking Through the Cloud - Continuous Integration / Continuous Disaster</h4>
-                <h5>0x57696c6c</h5>
-                <p>As supply-chain attacks are becoming more common, it's apparent that CI/CD pipelines are ripe for abuse. In a recent offensive engagement, my team set out to identify the breadth of compromise from three assume breach scenarios. In this talk I'd like to discuss some of the pitfalls and findings that we came across while we moonwalked through the cloud environment of a major cyber security company.</p>
+            <h3>Sunday (April 23rd)</h3>
+            <div id="list-group w-100">
+                <div class="p0 rounded">
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>10:30 AM</p></div>
+                            <div class="7 col"><a>Recon 101: Huge Needles, Small Haystack</a></div>
+                            <div class="3 col"><p>Corey Overstreet</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>Organizations often disclose a wealth of information without realizing it. Attackers can use open source intelligence resources to recover information about their external and internal infrastructure as well as employees without sending a single packet to the target. In this talk, I will cover multiple resources that I use on penetration tests and red teams to quickly and thoroughly gather information about a target that often leads to successful compromises</p>
+                    </div>
+                    <div class="card m0 p0 collapsible">
+                         <div class="row">
+                            <div class="2 col"><p>11:45 AM</p></div>
+                            <div class="7 col"><a>#BadgeLife The CarolinaCon Online 3 Badge</a></div>
+                            <div class="3 col"><p>Matt & Mike</p></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <p>This talk will provide an detailed walk through the motivation of the design of the CarolinaCon Online 3 badge and it's hidden features.</p>
+                    </div>
+                    <div class="card m0 p0 b-boarder">
+                         <div class="row">
+                            <div class="2 col"><p>12:00 PM</p></div>
+                            <div class="7 col"><p>Conference close. CTF winners announced</p></div>
+                            <div class="3 col"><p>CC Crew</p></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a name="vuln-containers"></a>
-                <h4>Vulnerability Management for Containers</h4>
-                <h5>Scott Wilson</h5>
-                <p>With the advent of cloud computing, securing Containers is becoming ever more critical to organizations adopting a nimbler approach to delivering services and applications. In this presentation, Scott will share some of the basic paradigms of Container security, specifically detailing how Vulnerability Scanning is best designed. Understand the pros and cons of different models and strategies for ensuring code is deployed and maintained in a secure fashion. I have a unique view and a strong opinion about the best strategies to scan these systems for vulnerabilities, building on my experience analyzing thousands of vulnerabilities over two decades.</p>
-            </div>
-            <div>
-                <a name="usenet"></a>
-                <h4>Tales from the Usenet</h4>
-                <h5>Jason Evans</h5>
-                <p>Usenet is the original long-form discussion platform that predates the Internet. This session will be an introduction to Usenet as well as some stories from its past. This session will begin with a brief history of Usenet and where it is now. Some historical anecdotes will then be given, some will historically interesting and others will be humorous to give the audience a taste of what it was like to use the Usenet in decades past.</p>
-            </div>
-            <div>
-                <a name="cameras"></a>
-                <h4>Cameras, CACs & Clocks: Enterprise IoT Security Sucks - A Story of Two Million Interrogated Devices</h4>
-                <h5>Brian Contos</h5>
-                <p>Working globally with Fortune 500 enterprises and government agencies we’ve interrogated over two million production IoT devices. Across these two million devices we’ve identified threats and trends, compiled statistics, summarized compelling cases, and evaluated common offenders. We’ve also assembled tactics that organizations can employ to recognize value from their IoT devices while minimizing risk and ensuring that devices that are secure today will stay secure tomorrow.</p>
-            </div>
-            <div>
-                <a name="security-features"></a>
-                <h4>Security is an Awesome Product Feature</h4>
-                <h5>Mark Hahn</h5>
-                <p>As a security practitioner, do you feel like your developers don’t want to talk to you? How can we convince developers that security is important? This talk explains how to frame security issues as opportunities for product differentiation. This approach starts a conversation with the developers that will yield a better relationship with the security team. I’ll show how to stop treating developers as the problem and include them as active partners in the solution. <br> Product Teams balance the competing interests for new features based on business value, but oftentimes there are no voices for security. Security teams need to make the point that the business value of a system cannot be realized if the system is un-trustworthy. Development teams must add security to their full lifecycle view of product development. <br> This work is based on rolling out security processes in my consulting organization of nearly 4,000 resources.<br> In many organizations security features are added as requirements in a category called “non-functional requirements”. This phrase may mean they are explicit features of the product. But this category also devalues these features. Product owners and development teams must value security aspects of the product as first class features. If a client, or user, cannot trust the system to prevent their data from being exposed, then they will likely find a different product to use. Conversely, if a product demonstrates strong security features, then clients and users will choose that system over others that are less secure.</p>
-            </div>
-            <div>
-                <a name="stryng-theory"></a>
-                <h4>Stryng Theory: Disregard Becomes a Dumpster Fire</h4>
-                <h5>Stryngs</h5>
-                <p>The story of my approach to white-hatting for over a decade and some Do'S and Don'ts I have learned along the way. Even that one time I...</p>
-            </div>
-            <div>
-                <a name="trifecta"></a>
-                <h4>Trifecta of Email Authentication</h4>
-                <h5>Denice</h5>
-                <p>This talk would be about how to prevent or avoid email spoofing. How the three email authentication mechanisms and techniques work together to avoid or atleast eliminate frauds and cybercriminals from spoofing a domain or sender information.</p>
-            </div>
-            <div>
-                <a name="purple"></a>
-                <h4>Beyond Purple - Fostering Cross-Team Collaboration</h4>
-                <h5>Andrew Clinton</h5>
-                <p>Many companies find themselves with teams that become siloed. This often leads to strained communications, filtered communications, or even loss of communication between these teams. In this talk, we will use real-world examples where collaboration and purple team concepts were used to break down communication barriers, share knowledge, and foster ongoing cooperation between a mix of technical and non-technical teams.</p>
-            </div>
-        </div>
-        <div class="card bg-black-trans">
-            <a name="callin"></a>
-            <h3>Callin Info</h3>
-            This year we are going to end the conference with a livestream where we will be answering questions about the CTF, CarolinaCon itself, general hacking info, and whatever else comes up! At the end of the session, the CTF winners will be announced. 
         </div>
     </main>
 </body>
