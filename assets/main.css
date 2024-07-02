@@ -22,7 +22,7 @@ html,body {
 }
 
 html {
-	background: rgb(0, 40, 59);
+	background: #11151C;
 	margin: 0;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 hr {
-	border-color: #345e6c;
+	border-color: #212D40;
 }
 
 h2, h3 {
@@ -40,7 +40,7 @@ h2, h3 {
 }
 
 h5 {
-	color:  #fcf497;
+	color:  #7D4E57;
 }
 
 .big-text {
@@ -49,7 +49,7 @@ h5 {
 
 
 a  {
-	color: #f4e2cb;
+	color: #D66853;
 	font-size: 1.2rem;
 }
 
@@ -68,48 +68,6 @@ a  {
 	}
 }
 
-.spin {
-	animation: spin 0.3s infinite linear;
-	animation-play-state: paused;
-}
-
-.spin:hover {
-    animation-play-state: running;
-}
-
-@keyframes spin {
-	0%  {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(360deg);}	
-}
-
-.earth-logo {
-	/*display: block;*/
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
-	max-width:200px;
-}
-
-.float-around {
-	position: relative;
-	animation-name: float-around;
-	animation-duration: 30s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-
-	width: 20rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@keyframes float-around {
-	0%   {left:0rem; top:0rem;}
-	25%  {left:8rem; top:-5rem;}
-	50%  {left:0rem; top:-2rem;}
-	75%  {left:-12rem; top:1rem;}
-	100% {left:0rem; top:0rem;}
-}
-
 .panda-logo {
 	/*display: block;*/
 	margin-left: auto;
@@ -119,8 +77,8 @@ a  {
 }
 
 .card {
-	background: #014353;
-	border-color: #345e6c;
+	background: #31263e;
+	border-color: #212D40;
 }
 
 dd { 
@@ -128,36 +86,10 @@ dd {
   margin-left: 2rem;
 }
 
-.earthday {
-	opacity: 1;
-    transition-duration: 1.5s;
-    transition-property: opacity;
-
-    font-size: 3rem;
-    width: 50%;
-    left: 25%;
-	position: fixed;
-	top: 5vh;
-	text-align: center;
-	background: #014353;
-	border-color: ;
-	border: solid #345e6c;
-}
-.earthday.fade {
-	opacity: 0;
-}
-
-@media only screen and (max-device-width: 1366px) {
-	.earthday {
-		font-size: 1rem;
-	}
-}
-
-
 .b-boarder {
 	border: none;
   	border-bottom: solid;
-  	border-color: #345e6c;
+  	border-color: #212D40;
 }
 
 
