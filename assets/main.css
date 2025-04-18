@@ -1,111 +1,230 @@
-@font-face {
-	font-family: SourceCodePro;
-    src: url(SourceCodePro-Regular.ttf.woff2);
+:root {
+    --bg-color: #f9f5e8;
+    --container-bg: #fffef6;
+    --text-color: #333;
+    --heading-color: #222;
+    --subheading-color: #555;
+    --button-bg: #f3e9cb;
+    --button-hover: #e9dec5;
+    --announcement-bg: #fffae6;
+    --footer-color: #777;
+    --tape-color: rgba(255, 214, 102, 0.7);
+    --pin-color: #ffc85c;
+    --box-shadow: rgba(0,0,0,0.2);
+    --inset-shadow: rgba(0,0,0,0.1);
+    --link-color: #0066cc;
+    --link-hover: #004d99;
 }
 
-@font-face {
-	font-family: ZenKakuGothicAntique;
-    src: url(ZenKakuGothicAntique-Regular.woff2);
-}
-
-* {
-	font-family: ZenKakuGothicAntique, ShinGo, SourceCodePro, monospace !important;
-	line-height: 1.3;
-}
-
-p {
-	font-size: 1.2rem;
-}
-
-html,body {
-	height: fit-content;
-}
-
-html {
-	background: #11151C;
-	margin: 0;
+[data-theme="dark"] {
+    --bg-color: #222;
+    --container-bg: #333;
+    --text-color: #ddd;
+    --heading-color: #f0f0f0;
+    --subheading-color: #ccc;
+    --button-bg: #444;
+    --button-hover: #555;
+    --announcement-bg: #3a3a3a;
+    --footer-color: #999;
+    --tape-color: rgba(255, 193, 7, 0.7);
+    --pin-color: #ffc107;
+    --box-shadow: rgba(0,0,0,0.4);
+    --inset-shadow: rgba(0,0,0,0.3);
+    --link-color: #7fb3ec;
+    --link-hover: #a7ccf0;
 }
 
 body {
-	margin: 0;
-	color: white;
+    background: var(--bg-color);
+    font-family: 'Patrick Hand', cursive;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-hr {
-	border-color: #212D40;
+.container {
+    max-width: 760px;
+    width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+    background: var(--container-bg);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px var(--box-shadow);
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-h2, h3 {
-	margin: 0.5em;
+.tape {
+    width: 150px;
+    height: 30px;
+    background: var(--tape-color);
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg);
+    box-shadow: inset 0px 0px 5px var(--inset-shadow);
+    transition: background-color 0.3s ease;
 }
 
-h5 {
-	color:  #7D4E57;
+h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
 }
 
-.big-text {
-	font-size: 1.875em;
+h2 {
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    color: var(--subheading-color);
+    margin-top: 0;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
 }
 
-
-a  {
-	color: #D66853;
-	font-size: 1.2rem;
+nav {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
-.main {
-	/*padding-top: 8em;*/
-	min-height: 100vh;
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
-.blink {
-	animation: blinker 1.5s linear infinite;
+a:hover {
+    color: var(--link-hover);
 }
 
-@keyframes blinker {
-	50% {
-		opacity: 0;
-	}
+nav a {
+    text-decoration: none;
+    background: var(--button-bg);
+    display: inline-block;
+    padding: 10px 15px;
+    color: var(--text-color);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--box-shadow);
+    transition: all 0.3s ease;
+    font-size: 1em;
+    min-width: 80px;
 }
 
-.panda-logo {
-	/*display: block;*/
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
-	max-width:20vw;
+nav a:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
 }
 
 .card {
-	background: #31263e;
-	border-color: #212D40;
+    background: var(--announcement-bg);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 5px var(--inset-shadow);
+    min-height: 80px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-dd { 
-  display: block;
-  margin-left: 2rem;
+.card h3 {
+    font-size: 1.3em;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
 }
 
-.b-boarder {
-	border: none;
-  	border-bottom: solid;
-  	border-color: #212D40;
+.card ul {
+    padding-left: 20px;
 }
 
-
-.collapsible {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-bottom: solid;
-  outline: none;
-  border-color: #345e6c;
+.card li {
+    margin-bottom: 10px;
 }
 
-.content {
-	display: none;
-	overflow: hidden;
-	border: none;
-  	border-bottom: solid;
-  	border-color: #345e6c;
+.corner-pin {
+    width: 10px;
+    height: 10px;
+    background: var(--pin-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 1px 1px 3px var(--box-shadow);
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 30px;
+    color: var(--footer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--button-bg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover);
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 85%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    nav a {
+        width: auto;
+        padding: 10px 5px;
+        font-size: 0.9em;
+    }
+
+    .card {
+        padding: 15px;
+    }
 }

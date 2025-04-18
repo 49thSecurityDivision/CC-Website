@@ -1,0 +1,111 @@
+@font-face {
+	font-family: SourceCodePro;
+    src: url(SourceCodePro-Regular.ttf.woff2);
+}
+
+@font-face {
+	font-family: ZenKakuGothicAntique;
+    src: url(ZenKakuGothicAntique-Regular.woff2);
+}
+
+* {
+	font-family: ZenKakuGothicAntique, ShinGo, SourceCodePro, monospace !important;
+	line-height: 1.3;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+html,body {
+	height: fit-content;
+}
+
+html {
+	background: #11151C;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	color: white;
+}
+
+hr {
+	border-color: #212D40;
+}
+
+h2, h3 {
+	margin: 0.5em;
+}
+
+h5 {
+	color:  #7D4E57;
+}
+
+.big-text {
+	font-size: 1.875em;
+}
+
+
+a  {
+	color: #D66853;
+	font-size: 1.2rem;
+}
+
+.main {
+	/*padding-top: 8em;*/
+	min-height: 100vh;
+}
+
+.blink {
+	animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+.panda-logo {
+	/*display: block;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	max-width:20vw;
+}
+
+.card {
+	background: #31263e;
+	border-color: #212D40;
+}
+
+dd { 
+  display: block;
+  margin-left: 2rem;
+}
+
+.b-boarder {
+	border: none;
+  	border-bottom: solid;
+  	border-color: #212D40;
+}
+
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-bottom: solid;
+  outline: none;
+  border-color: #345e6c;
+}
+
+.content {
+	display: none;
+	overflow: hidden;
+	border: none;
+  	border-bottom: solid;
+  	border-color: #345e6c;
+}
